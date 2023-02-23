@@ -4,6 +4,10 @@
 import {v4 as uuidv4} from 'uuid';
 import {ViewportSize} from '@playwright/test';
 
+import {isSmallScreen, shouldSkipInSmallScreen, shouldRunInLinux, waitForAnimationEnd} from './test_helper';
+
+export {isSmallScreen, shouldSkipInSmallScreen, shouldRunInLinux, waitForAnimationEnd};
+
 const second = 1000;
 const minute = 60 * 1000;
 
